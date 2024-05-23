@@ -295,7 +295,9 @@ img {
 }
 
 /* Add shadow header */
-
+.shadow-header{
+  box-shadow: 0 1px 16px hsla(0, 0%, 0%, .12);
+}
 
 /* Active link */
 
@@ -361,8 +363,72 @@ img {
   row-gap: 1rem;
 }
 
-/* Animate scroll icon */
+.home-social-link {
+  background-color: var(--black-color-light);
+  color: var(--white-color);
+  font-size: 1.25rem;
+  padding: 6px;
+  display: grid;
+  place-items: center;
+  transition: background-color .3s;
+}
+.home-social-link:hover{
+  background-color: var(--black-color);
+}
+.home-info{
+  margin-top: 4rem;
+}
 
+.home-description {
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+}
+.home-description b {
+  background: linear-gradient(90deg,
+              hsla(14, 98%, 50%, .3),
+              hsla(14, 98%, 50%, 0));
+}
+
+ .home-scroll{
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+ }
+ .home-scroll-text {
+  display: none;
+ }
+ .home-scroll-box {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color .4s;
+ }
+ .home-scroll-box i {
+  animation: scroll-down 3s infinite;
+ }
+
+/* Animate scroll icon */
+@keyframes scroll-down{
+  0%{
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(.6rem);
+    opacity: 0;
+  }
+}
 
 /*=============== BUTTON ===============*/
 
