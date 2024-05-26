@@ -765,6 +765,27 @@ img {
 .contact-input:-webkit-autofill{
   transition: background-color 6000s, color 6000s;
 }
+.contact-label{
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--black-color);
+  padding: 8px;
+  pointer-events: none;
+  transition: top .4s, opacity .4s, background-color .4s;
+  opacity: 0;
+}
+.contact-form .contact-area{
+  height: 10rem;
+}
+.contact-area textarea{
+  resize: none;
+  padding-top: 1rem;
+}
+
 /* Opaque placeholder */
 
 
