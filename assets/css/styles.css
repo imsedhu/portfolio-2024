@@ -785,13 +785,66 @@ img {
   resize: none;
   padding-top: 1rem;
 }
+.contact-button{
+  background-color: var(--first-color);
+  cursor: pointer;
+}
 
 /* Opaque placeholder */
-
+.contact-input:focus::placeholder{
+  opacity: 0;
+}
 
 /* Move label up & sticky label */
+.contact-input:focus + .contact-label,
+.contact-input:not(:placeholder-shown).contact-input:not(:focus) + .contact-label{
+  opacity: 1;
+  top: -16px;
+}
 
-
+.contact-social{
+  display: grid;
+  row-gap: 1rem;
+  background-color: hsl(0, 0%, 10%);
+  padding-block: 1rem 2rem;
+  text-align: center;
+}
+.contact-social-arrow{
+  width: 32px;
+  margin: 0 auto;
+}
+.contact-social-data{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.contact-social-description-1{
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  margin-bottom: .5rem;
+}
+.contact-social-description-2{
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+}
+.contact-social-links{
+  display: flex;
+  justify-content: center;
+  column-gap: .75rem;
+}
+.contact-social-link{
+  background-color: var(--black-color-light);
+  padding: 6px;
+  color: var(--white-color);
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  transition: background-color .3s;
+}
+.contact-social-link:hover{
+  background-color: var(--first-color);
+}
 /*=============== FOOTER ===============*/
 
 
