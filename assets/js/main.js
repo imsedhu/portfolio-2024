@@ -41,14 +41,14 @@ window.addEventListener('scroll', shadowHeader)
 const contactForm = document.getElementById('contact-form');
 const contactMessage = document.getElementById('contact-message');
 
-const emailFromUser = (e)=>{
+const sendEmail = (e)=>{
     e.preventDefault();
 
     // serviceID - templateID - #form - publicKey
     emailjs.sendForm('service_h7hsuai','template_t1xz0li','#contact-form','M7kBMC-AQVNUJSCBo')
     .then(()=>{
          // Show sent message
-         contactMessage.textContent='Message sent successfully ✅'
+         contactMessage.textContent ='Message sent successfully ✅'
          // Remove message after five seconds
          setTimeout(()=>{
             contactMessage.textContent=''
@@ -61,7 +61,7 @@ const emailFromUser = (e)=>{
     })
 }
 
-contactForm.addEventListener('submit', emailFromUser);
+contactForm.addEventListener('submit', sendEmail);
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
