@@ -1050,3 +1050,129 @@ body.dark-theme{
 }
 
 /* For large devices */
+@media screen and (min-width: 1150px) {
+  .container{
+    margin-inline: auto;
+  }
+  .section{
+    padding-block: 7rem 2rem;
+  }
+  .section__title-1::after,
+  .section__title-2::after{
+    width: 70px;
+    height: 48px;
+  }
+  .geometric-box{
+    transform: scale(1.2);
+  }
+  .nav{
+    height: calc(var(--header-height) + 2rem);
+    column-gap: 4rem;
+  }
+  .nav-close,
+  .nav-toggle,
+  .nav-title,
+  .nav-name{
+    display: none;
+  }
+  .nav-list{
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+  .nav-menu{
+    margin-left: auto;
+  }
+  .nav-link{
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+  }
+  .nav-link:hover{
+    color: var(--title-color);
+  }
+  .nav-link::after{
+    background-color: var(--title-color);
+  }
+  .active-link{
+    color: var(--title-color);
+  }
+  .nav-link-button{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 1.1rem 1.5rem;
+  }
+  .nav-link-button:hover{
+    color: var(--white-color);
+  }
+  .nav-link-button::after{
+    background-color: transparent;
+  }
+  .change-theme{
+    color: var(--text-color);
+  }
+  .change-theme:hover{
+    color: var(--title-color);
+  }
+  .home-container{
+    grid-template-columns: repeat(2, 460px);
+    gap: 2rem 4rem;
+    align-items: center;
+    padding-block: 5.5rem;
+  }
+  .home-perfil{
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .home-image{
+    width: 350px ;
+  }
+  .home-shadow{
+    right: -1.25rem;
+    bottom: -1.25rem;
+    border: 6px solid var(--black-color);
+  }
+  .home-name,
+  .home-description{
+    text-align: initial;
+  }
+  .home-name{
+    align-self: flex-end;
+  }
+  .home-info{
+    margin-top: 0;
+    align-self: flex-start;
+  }
+  .home-description{
+    position: relative;
+    font-size: var(--h2-font-size);
+    margin-bottom: 5.5rem;
+    padding-left: 3rem;
+  }
+  .home-description::after{
+    content: '';
+    width: 32px;
+    height: 2px;
+    background-color: var(--title-color);
+    position: absolute;
+    left: 0;
+    top: 14px;
+  }
+  .home-scroll{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+  }
+  .home-scroll-text{
+    display: block;
+    color: var(--text-color);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+  }
+  .home-scroll-box{
+    width: 44px;
+    height: 44px;
+  }
+  .home-scroll-box i{
+    font-size: 1.25rem;
+  }
+}
