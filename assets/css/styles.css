@@ -662,7 +662,7 @@ body.dark-theme{
 }
 /*=============== PROJECTS ===============*/
 .projects{
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   transition: background-color .4s;
 }
 .projects-container{
@@ -736,6 +736,7 @@ body.dark-theme{
 /*=============== CONTACT ===============*/
 .contact{
   padding-bottom: 0;
+  background-color: var(--container-color);
 }
 .contact-container{
   position: relative;
@@ -746,7 +747,7 @@ body.dark-theme{
   position: relative;
   width: 300px;
   height: 300px;
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   padding: 3rem 1.5rem 3.5rem;
   margin-left: auto;
   border-bottom: 4px solid var(--first-color);
