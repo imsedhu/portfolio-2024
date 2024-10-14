@@ -149,3 +149,5 @@ sr.reveal(`.home-name,
 sr.reveal(`.services-card,
             .projects-card`, 
             {interval: 100})
+
+
